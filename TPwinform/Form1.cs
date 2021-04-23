@@ -17,5 +17,13 @@ namespace TPwinform
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Articulo art = new Articulo();
+            art.Nombre = "Speed";
+            MessageBox.Show(art.Nombre);
+
+
+        }
     }
 }
