@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\TPwinform.csproj": {}
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj": {}
   },
   "projects": {
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\TPwinform.csproj": {
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\TPwinform.csproj",
+        "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj",
         "projectName": "TPwinform",
-        "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\TPwinform.csproj",
-        "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
-        "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\obj\\",
+        "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -39,6 +45,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

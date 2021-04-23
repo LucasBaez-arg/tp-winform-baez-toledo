@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace TPwinform
 {
     public partial class Form1 : Form
@@ -19,11 +21,23 @@ namespace TPwinform
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Articulo art = new Articulo();
-            art.Nombre = "Speed";
-            MessageBox.Show(art.Nombre);
+            List<Articulo> articulos = new List<Articulo>();
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
+            try
+            {
+               articulos = articuloNegocio.Listar();
+               dataGridView1.DataSource = articulos;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

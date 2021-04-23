@@ -16,3 +16,28 @@ D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\ne
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\ref\TPwinform.dll
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.pdb
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.genruntimeconfig.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.exe
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.deps.json
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.runtimeconfig.json
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.runtimeconfig.dev.json
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\ref\TPwinform.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csprojAssemblyReference.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.Form1.resources
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csproj.GenerateResource.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.AssemblyInfoInputs.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.AssemblyInfo.cs
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csproj.CoreCompileInputs.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\ref\TPwinform.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.genruntimeconfig.cache
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csproj.CopyComplete
