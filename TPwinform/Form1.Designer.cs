@@ -50,6 +50,7 @@ namespace TPwinform
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(553, 291);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
             // btnAgregar
             // 
@@ -98,7 +99,7 @@ namespace TPwinform
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(41, 24);
+            this.txtBuscar.Location = new System.Drawing.Point(41, 26);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(449, 23);
             this.txtBuscar.TabIndex = 6;

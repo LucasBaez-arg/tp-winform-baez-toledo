@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class Categoria
+    public class Categoria
     {
         //Atributos
         private string descripcion;
 
-        public string Descripcion
+        public Categoria(string descripcion)
         {
-            set { this.descripcion = value; }
-            get { return descripcion; }
+             this.descripcion = descripcion;
         }
 
+        public override string ToString()
+        {
+            return this.descripcion;
+        }
     }
 }

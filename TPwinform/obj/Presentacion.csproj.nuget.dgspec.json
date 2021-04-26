@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj": {}
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\Presentacion.csproj": {}
   },
   "projects": {
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
-        "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -64,18 +70,24 @@
         }
       }
     },
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj",
-        "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
-        "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\Negocio.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -88,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -128,18 +140,24 @@
         }
       }
     },
-    "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj": {
+    "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj",
+        "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\Presentacion.csproj",
         "projectName": "Presentacion",
-        "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj",
-        "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
-        "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\obj\\",
+        "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\Presentacion.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -152,11 +170,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj": {
-                "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj"
               },
-              "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj"
+              "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Negocio\\Negocio.csproj"
               }
             }
           }

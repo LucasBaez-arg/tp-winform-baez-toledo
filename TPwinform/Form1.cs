@@ -30,11 +30,16 @@ namespace TPwinform
             {
                articulos = articuloNegocio.Listar();
                dataGridView1.DataSource = articulos;
+               dataGridView1.Columns["Imagen"].Visible = false;
+               RecargarImg(articulos[0].Imagen);
+
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
             }
+
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -45,6 +50,16 @@ namespace TPwinform
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+            RecargarImg(seleccionado.Imagen);
+        }
+        private void RecargarImg(string img)
+        {
+            pictureBox1.Load(img);
         }
     }
 }
