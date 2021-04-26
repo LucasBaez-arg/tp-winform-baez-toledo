@@ -1,21 +1,3 @@
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.exe
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.deps.json
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.runtimeconfig.json
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.runtimeconfig.dev.json
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.dll
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\ref\TPwinform.dll
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.pdb
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csprojAssemblyReference.cache
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.Form1.resources
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csproj.GenerateResource.cache
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.GeneratedMSBuildEditorConfig.editorconfig
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.AssemblyInfoInputs.cache
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.AssemblyInfo.cs
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.csproj.CoreCompileInputs.cache
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.dll
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\ref\TPwinform.dll
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.pdb
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.genruntimeconfig.cache
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.exe
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.deps.json
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\bin\Debug\net5.0-windows\TPwinform.runtimeconfig.json

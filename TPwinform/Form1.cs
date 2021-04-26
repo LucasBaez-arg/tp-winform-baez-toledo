@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.Data.SqlClient;
+using Dominio;
+using Negocio;
+
 
 namespace TPwinform
 {
@@ -38,6 +40,11 @@ namespace TPwinform
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

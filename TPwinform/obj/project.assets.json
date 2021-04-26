@@ -130,6 +130,33 @@
             "rid": "win"
           }
         }
+      },
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Dominio": "1.0.0",
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/Negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Negocio.dll": {}
+        }
       }
     }
   },
@@ -446,36 +473,40 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Negocio/1.0.0": {
+      "type": "project",
+      "path": "../Negocio/Negocio.csproj",
+      "msbuildProject": "../Negocio/Negocio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "Dominio >= 1.0.0",
+      "Negocio >= 1.0.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maty\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\baez-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj",
-      "projectName": "TPwinform",
-      "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\TPwinform.csproj",
-      "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\TPwinform\\obj\\",
+      "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj",
+      "projectName": "Presentacion",
+      "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\Presentacion.csproj",
+      "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
+      "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\TPwinform\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -487,7 +518,14 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj": {
+              "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj"
+            },
+            "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj": {
+              "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Negocio\\Negocio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
