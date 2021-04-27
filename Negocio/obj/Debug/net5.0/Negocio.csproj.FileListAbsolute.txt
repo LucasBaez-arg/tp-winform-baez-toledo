@@ -13,3 +13,18 @@ D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\Negocio\obj\Debug\net5
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\Negocio\obj\Debug\net5.0\Negocio.dll
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\Negocio\obj\Debug\net5.0\ref\Negocio.dll
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\Negocio\obj\Debug\net5.0\Negocio.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\Negocio.deps.json
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\Negocio.dll
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\ref\Negocio.dll
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\Negocio.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\Dominio.dll
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\bin\Debug\net5.0\Dominio.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.csprojAssemblyReference.cache
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.AssemblyInfoInputs.cache
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.AssemblyInfo.cs
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.csproj.CopyComplete
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.dll
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\ref\Negocio.dll
+C:\Users\Maty\Documents\GitHub\Programacion\Negocio\obj\Debug\net5.0\Negocio.pdb

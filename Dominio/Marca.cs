@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class Marca
+    public class Marca
     {   
         //Atributos
-        private string descripcion;
+       public string descripcion;
 
-        public string Descripcion
+       public Marca(string descripcion)
         {
-            set { this.descripcion = value; }
-            get { return descripcion; }
+            this.descripcion = descripcion;
+        }
+        public override string ToString()
+        {
+            return this.descripcion;
         }
 
     }
