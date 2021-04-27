@@ -16,7 +16,6 @@ D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\ne
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\Dominio.pdb
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\bin\Debug\net5.0-windows\Negocio.pdb
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.csprojAssemblyReference.cache
-D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\TPwinform.Form1.resources
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.AssemblyInfoInputs.cache
@@ -56,3 +55,5 @@ C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\P
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.Form1.resources
+D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.FormAgregar.resources

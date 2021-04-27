@@ -12,7 +12,7 @@ using Dominio;
 using Negocio;
 
 
-namespace TPwinform
+namespace Presentacion
 {
     public partial class Form1 : Form
     {
@@ -60,6 +60,12 @@ namespace TPwinform
         private void RecargarImg(string img)
         {
             pictureBox1.Load(img);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormAgregar agregar = new FormAgregar();
+            agregar.ShowDialog();
         }
     }
 }

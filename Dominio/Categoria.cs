@@ -10,10 +10,16 @@ namespace Dominio
     {
         //Atributos
         private string descripcion;
+        private int id;
 
         public Categoria(string descripcion)
         {
              this.descripcion = descripcion;
+        }
+        public Categoria(int id,string descripcion)
+        {
+            this.descripcion = descripcion;
+            this.id = id;
         }
 
         public override string ToString()

@@ -44,8 +44,8 @@ namespace Presentacion
             this.bttCancelar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.BoxMarca = new System.Windows.Forms.ComboBox();
+            this.BoxCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,29 +174,29 @@ namespace Presentacion
             this.label7.TabIndex = 14;
             this.label7.Text = "Categoria";
             // 
-            // comboBox1
+            // BoxMarca
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(150, 249);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(211, 23);
-            this.comboBox1.TabIndex = 15;
+            this.BoxMarca.FormattingEnabled = true;
+            this.BoxMarca.Location = new System.Drawing.Point(150, 249);
+            this.BoxMarca.Name = "BoxMarca";
+            this.BoxMarca.Size = new System.Drawing.Size(211, 23);
+            this.BoxMarca.TabIndex = 15;
             // 
-            // comboBox2
+            // BoxCategoria
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(151, 296);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 23);
-            this.comboBox2.TabIndex = 16;
+            this.BoxCategoria.FormattingEnabled = true;
+            this.BoxCategoria.Location = new System.Drawing.Point(151, 296);
+            this.BoxCategoria.Name = "BoxCategoria";
+            this.BoxCategoria.Size = new System.Drawing.Size(210, 23);
+            this.BoxCategoria.TabIndex = 16;
             // 
             // FormAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BoxCategoria);
+            this.Controls.Add(this.BoxMarca);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.bttCancelar);
@@ -238,7 +238,7 @@ namespace Presentacion
         private System.Windows.Forms.Button bttCancelar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox BoxMarca;
+        private System.Windows.Forms.ComboBox BoxCategoria;
     }
 }

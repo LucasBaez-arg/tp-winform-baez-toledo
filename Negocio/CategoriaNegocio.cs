@@ -15,11 +15,11 @@ namespace Negocio
             List<Categoria> lista = new List<Categoria>();
             try
             {
-                datos.SetearConsulta("SELECT id,descipcion FROM CATEGORIAS");
+                datos.SetearConsulta("SELECT Id,Descripcion FROM CATEGORIAS");
                 datos.EjecutarLectura();
                 while (datos.Leer.Read())
                 {
-                    lista.Add(new Categoria((int)datos.Leer["id"], (string)datos.Leer["descripcion"]));
+                    lista.Add(new Categoria((int)datos.Leer["Id"], (string)datos.Leer["Descripcion"]));
                 }
 
                 return lista;

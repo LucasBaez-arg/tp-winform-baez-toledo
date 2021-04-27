@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
 
 namespace Presentacion
 {
@@ -24,7 +25,17 @@ namespace Presentacion
 
         private void FormAgregar_Load(object sender, EventArgs e)
         {
-
+            CategoriaNegocio listNegocio = new CategoriaNegocio();
+            MarcaNegocio listMarca = new MarcaNegocio();
+            try
+            {
+                BoxMarca.DataSource = listMarca.listar();
+                BoxCategoria.DataSource = listNegocio.listar();
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
         }
     }
 }
