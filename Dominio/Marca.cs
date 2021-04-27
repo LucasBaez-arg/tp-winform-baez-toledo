@@ -7,14 +7,22 @@ using System.Threading.Tasks;
 namespace Dominio
 {
     public class Marca
-    {   
+    {
         //Atributos
-       public string descripcion;
+       private int id;
+       private string descripcion;
 
        public Marca(string descripcion)
         {
             this.descripcion = descripcion;
         }
+
+        public Marca(int id, string descripcion)
+        {
+            this.descripcion = descripcion;
+            this.id = id;
+        }
+
         public override string ToString()
         {
             return this.descripcion;
