@@ -58,3 +58,4 @@ D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\ne
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.FormAgregar.resources
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.Form1.resources
 C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.FormAgregar.resources
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.FormModificar.resources

@@ -11,7 +11,6 @@ namespace Negocio
     public class ArticuloNegocio
     {
 
-
         public void Agregar(Articulo art)
         {
             AccesoDatos db = new AccesoDatos();
@@ -35,6 +34,22 @@ namespace Negocio
 
         public void Modificar(Articulo art)
         {
+
+            AccesoDatos db = new AccesoDatos();
+
+            try
+            {   
+                db.SetearConsulta("UPDATE Articulos SET Codigo='" + art.CodigoArticulo + "', Nombre='" + art.Nombre + "', Descripcion='" + art.Descripcion + "', IdMarca=" + art.Marca.Id + ", IdCategoria=" + art.Categoria.Id + ", ImagenUrl='" + art.Imagen + "', Precio='" + art.Precio +"' WHERE Id="+art.Id);
+                db.EjectutarAccion();
+            }
+            catch(Exception err)
+            {
+                throw err;
+            }
+            finally
+            {
+                db.CerraConexion();
+            }
 
         }
 

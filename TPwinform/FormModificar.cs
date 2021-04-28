@@ -10,22 +10,21 @@ using System.Windows.Forms;
 using Negocio;
 using Dominio;
 
+
 namespace Presentacion
 {
-    public partial class FormAgregar : Form
+    public partial class FormModificar : Form
     {
+        private Articulo art;
 
-        public FormAgregar()
+        public FormModificar(Articulo art)
         {
             InitializeComponent();
+
+            this.art = art;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormAgregar_Load(object sender, EventArgs e)
+        private void FormModificar_Load(object sender, EventArgs e)
         {
             CategoriaNegocio listNegocio = new CategoriaNegocio();
             MarcaNegocio listMarca = new MarcaNegocio();
@@ -33,17 +32,24 @@ namespace Presentacion
             {
                 BoxMarca.DataSource = listMarca.listar();
                 BoxCategoria.DataSource = listNegocio.listar();
+
+                txtCodigo.Text = this.art.CodigoArticulo;
+                txtNombre.Text = this.art.Nombre;
+                txtDescripcion.Text = this.art.Descripcion;
+                txtImagen.Text = this.art.Imagen;
+                txtPrecio.Text = this.art.Precio.ToString();
+                BoxCategoria.SelectedItem = this.art.Categoria;
+                BoxMarca.SelectedItem = this.art.Marca;                
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
             }
         }
 
-        private void bttAgregar_Click(object sender, EventArgs e)
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio artNegocio = new ArticuloNegocio();
-            Articulo art = new Articulo();
             try
             {
                 art.CodigoArticulo = txtCodigo.Text;
@@ -54,10 +60,10 @@ namespace Presentacion
                 art.Categoria = (Categoria)BoxCategoria.SelectedItem;
                 art.Marca = (Marca)BoxMarca.SelectedItem;
 
-                artNegocio.Agregar(art);
-                MessageBox.Show("Se agrego articulo");
+                artNegocio.Modificar(art);
+                MessageBox.Show("Se modifico articulo");
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
             }
@@ -65,18 +71,6 @@ namespace Presentacion
             {
                 Close();
             }
-            
-        }
-
-        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar < 48 || e.KeyChar > 59) && e.KeyChar != 8)
-                e.Handled = true;
-        }
-
-        private void bttCancelar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

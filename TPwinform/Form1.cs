@@ -23,23 +23,27 @@ namespace Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cargarGrilla();
+        }
+
+        void cargarGrilla()
+        {
             List<Articulo> articulos = new List<Articulo>();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
             try
             {
-               articulos = articuloNegocio.Listar();
-               dataGridView1.DataSource = articulos;
-               dataGridView1.Columns["Imagen"].Visible = false;
-               RecargarImg(articulos[0].Imagen);
+                articulos = articuloNegocio.Listar();
+                dataGridView1.DataSource = articulos;
+                dataGridView1.Columns["Id"].Visible = false;
+                dataGridView1.Columns["Imagen"].Visible = false;
+                RecargarImg(articulos[0].Imagen);
 
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
             }
-
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -66,6 +70,7 @@ namespace Presentacion
         {
             FormAgregar agregar = new FormAgregar();
             agregar.ShowDialog();
+            cargarGrilla();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -75,10 +80,27 @@ namespace Presentacion
                 ArticuloNegocio articuloNegocio = new ArticuloNegocio();
                 Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
                 articuloNegocio.Eliminar(seleccionado.Id);
-
                 MessageBox.Show("Articulo Eliminado");
+                cargarGrilla();
             }
             catch(Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+                Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+
+                FormModificar modificar = new FormModificar(seleccionado);
+                modificar.ShowDialog();
+                cargarGrilla();
+            }
+            catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
             }

@@ -156,6 +156,7 @@ namespace Presentacion
             this.bttCancelar.TabIndex = 12;
             this.bttCancelar.Text = "Cancelar";
             this.bttCancelar.UseVisualStyleBackColor = true;
+            this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
             // 
             // label6
             // 
