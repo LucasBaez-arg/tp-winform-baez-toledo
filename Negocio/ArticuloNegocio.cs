@@ -40,7 +40,20 @@ namespace Negocio
 
         public void Eliminar(int id)
         {
-
+            AccesoDatos db = new AccesoDatos();
+            try
+            {
+                db.SetearConsulta("Delete From Articulos where Id = " + id);
+                db.EjectutarAccion();
+            }
+            catch(Exception err)
+            {
+                throw err;
+            }
+            finally
+            {
+                db.CerraConexion();
+            }
         }
 
         public List<Articulo> Listar()
@@ -53,13 +66,14 @@ namespace Negocio
             {
 
                 string value = "WHERE A.IdMarca = M.Id AND A.IdCategoria = C.Id";
-                datos.SetearConsulta("SELECT A.Codigo, A.Nombre, A.Descripcion,A.ImagenUrl, M.Descripcion AS Marca, C.Descripcion AS Categoria, ImagenUrl, A.Precio FROM ARTICULOS AS A, MARCAS AS M, CATEGORIAS AS C "+ value);
+                datos.SetearConsulta("SELECT A.Id,A.Codigo, A.Nombre, A.Descripcion,A.ImagenUrl, M.Descripcion AS Marca, C.Descripcion AS Categoria, ImagenUrl, A.Precio FROM ARTICULOS AS A, MARCAS AS M, CATEGORIAS AS C "+ value);
                 datos.EjecutarLectura();
 
                 while (datos.Leer.Read())
                 {
                     Articulo art = new Articulo();
-                    
+
+                    art.Id = (int)datos.Leer["Id"];
                     art.Nombre = (string)datos.Leer["Nombre"];
                     art.Marca = new Marca((string)datos.Leer["Marca"]);
                     art.Precio = (decimal)datos.Leer["Precio"];

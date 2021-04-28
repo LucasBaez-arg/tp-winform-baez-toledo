@@ -9,6 +9,7 @@ namespace Dominio
     public class Articulo
     {
         //Atributos
+        private int id;
         private string codigoArticulo;
         private string nombre;
         private string descripcion;
@@ -57,8 +58,13 @@ namespace Dominio
             get { return this.precio; }
             set { precio = value; }
         }
+        public int Id
+        {
+            get { return this.id; }
+            set { id = value; }
+        }
 
-      
+
 
     }
 }

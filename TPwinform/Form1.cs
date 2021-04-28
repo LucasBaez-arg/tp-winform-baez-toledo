@@ -67,5 +67,21 @@ namespace Presentacion
             FormAgregar agregar = new FormAgregar();
             agregar.ShowDialog();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+                Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+                articuloNegocio.Eliminar(seleccionado.Id);
+
+                MessageBox.Show("Articulo Eliminado");
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+        }
     }
 }
