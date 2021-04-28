@@ -11,6 +11,38 @@ namespace Negocio
     public class ArticuloNegocio
     {
 
+
+        public void Agregar(Articulo art)
+        {
+            AccesoDatos db = new AccesoDatos();
+
+            try
+            {
+                string valores = "values(" + art.CodigoArticulo + ", '" + art.Nombre + "', '" + art.Descripcion + "', '" + art.Marca.Id + "', '" + art.Categoria.Id + "', '" + art.Imagen + "','"+ art.Precio + "')";
+                db.SetearConsulta("INSERT INTO Articulos (Codigo,Nombre,Descripcion,IdMarca,IdCategoria,ImagenUrl,Precio) "+valores);
+
+                db.EjectutarAccion();
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+            finally
+            {
+                db.CerraConexion();
+            }
+        } 
+
+        public void Modificar(Articulo art)
+        {
+
+        }
+
+        public void Eliminar(int id)
+        {
+
+        }
+
         public List<Articulo> Listar()
         {
 

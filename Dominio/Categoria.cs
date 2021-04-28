@@ -14,12 +14,18 @@ namespace Dominio
 
         public Categoria(string descripcion)
         {
-             this.descripcion = descripcion;
+            this.descripcion = descripcion;
         }
-        public Categoria(int id,string descripcion)
+        public Categoria(int id, string descripcion)
         {
             this.descripcion = descripcion;
             this.id = id;
+        }
+
+        public int Id{
+            get{
+               return id;
+            } 
         }
 
         public override string ToString()
