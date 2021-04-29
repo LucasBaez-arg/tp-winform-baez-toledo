@@ -17,7 +17,7 @@ namespace Negocio
 
             try
             {
-                string valores = "values(" + art.CodigoArticulo + ", '" + art.Nombre + "', '" + art.Descripcion + "', '" + art.Marca.Id + "', '" + art.Categoria.Id + "', '" + art.Imagen + "','"+ art.Precio + "')";
+                string valores = "values('" + art.CodigoArticulo + "', '" + art.Nombre + "', '" + art.Descripcion + "', '" + art.Marca.Id + "', '" + art.Categoria.Id + "', '" + art.Imagen + "','"+ art.Precio + "')";
                 db.SetearConsulta("INSERT INTO Articulos (Codigo,Nombre,Descripcion,IdMarca,IdCategoria,ImagenUrl,Precio) "+valores);
 
                 db.EjectutarAccion();

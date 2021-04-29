@@ -28,9 +28,18 @@ namespace Dominio
             } 
         }
 
+        public string Descripcion
+        {
+            get
+            {
+                return descripcion;
+            }
+        }
+
         public override string ToString()
         {
             return this.descripcion;
         }
+       
     }
 }

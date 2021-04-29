@@ -63,7 +63,16 @@ namespace Presentacion
         }
         private void RecargarImg(string img)
         {
-            pictureBox1.Load(img);
+            try
+            {
+                pictureBox1.Load(img);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.ToString());
+                pictureBox1.Load("https://definicion.de/wp-content/uploads/2009/02/error.jpg");
+            }
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -104,6 +113,13 @@ namespace Presentacion
             {
                 MessageBox.Show(err.ToString());
             }
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+            FormDetalle Detalle = new FormDetalle(seleccionado);
+            Detalle.ShowDialog();
         }
     }
 }
