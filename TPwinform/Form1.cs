@@ -37,6 +37,9 @@ namespace Presentacion
                 dataGridView1.DataSource = articulos;
                 dataGridView1.Columns["Id"].Visible = false;
                 dataGridView1.Columns["Imagen"].Visible = false;
+                dataGridView1.Columns["Descripcion"].Visible = false;
+                dataGridView1.Columns["Marca"].Visible = false;
+                dataGridView1.Columns["Categoria"].Visible = false;
                 RecargarImg(articulos[0].Imagen);
 
             }
