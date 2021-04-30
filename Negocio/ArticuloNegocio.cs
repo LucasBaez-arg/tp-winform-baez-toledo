@@ -11,6 +11,46 @@ namespace Negocio
     public class ArticuloNegocio
     {
 
+
+        public List<Articulo> Filtrar(string txtFiltrar)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            List<Articulo> articulos = new List<Articulo>();
+
+            string inner = "SELECT A.Codigo,A.Nombre,A.Descripcion,A.Precio,C.Descripcion AS Categoria,M.Descripcion AS Marca from ARTICULOS AS A  INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id WHERE ";
+            string filter = "A.Codigo LIKE '%" + txtFiltrar + "%'OR A.Nombre LIKE '%" + txtFiltrar + "%' OR A.Descripcion LIKE '%" + txtFiltrar + "%' OR A.Precio LIKE '%" + txtFiltrar + "%' OR C.Descripcion LIKE '%" + txtFiltrar + "%'OR M.Descripcion LIKE '%" + txtFiltrar + "%'";
+            try
+            {
+                datos.SetearConsulta(inner + filter);
+                datos.EjecutarLectura();
+
+                while (datos.Leer.Read())
+                {
+                    Articulo art = new Articulo();
+
+                    art.Nombre = (string)datos.Leer["Nombre"];
+                    art.Marca = new Marca((string)datos.Leer["Marca"]);
+                    art.Precio = (decimal)datos.Leer["Precio"];
+                    art.Categoria = new Categoria((string)datos.Leer["Categoria"]);
+                    art.Descripcion = (string)datos.Leer["Descripcion"];
+                    art.CodigoArticulo = (string)datos.Leer["Codigo"];
+
+                    articulos.Add(art);
+                }
+                return articulos;
+
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+            finally
+            {
+                datos.CerraConexion();
+            }
+        }
+
+
         public void Agregar(Articulo art)
         {
             AccesoDatos db = new AccesoDatos();

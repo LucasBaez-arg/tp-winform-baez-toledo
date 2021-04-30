@@ -14,7 +14,6 @@ C:\Users\Maty\Documents\GitHub\Programacion\Dominio\bin\Debug\net5.0\Dominio.dep
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\bin\Debug\net5.0\Dominio.dll
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\bin\Debug\net5.0\ref\Dominio.dll
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\bin\Debug\net5.0\Dominio.pdb
-C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.csprojAssemblyReference.cache
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs

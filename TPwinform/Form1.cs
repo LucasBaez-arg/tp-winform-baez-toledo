@@ -121,5 +121,31 @@ namespace Presentacion
             FormDetalle Detalle = new FormDetalle(seleccionado);
             Detalle.ShowDialog();
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> articulos = new List<Articulo>();
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+
+            try
+            {
+                if (!(string.IsNullOrEmpty(txtBuscar.Text)))
+                {
+                    articulos = articuloNegocio.Filtrar(txtBuscar.Text);
+                    dataGridView1.DataSource = articulos;
+                }
+                else
+                {
+                    cargarGrilla();
+                }
+              
+               
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+        }
     }
 }
+
