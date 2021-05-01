@@ -29,216 +29,309 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.CodigoLabel = new System.Windows.Forms.Label();
-            this.NombreLabel = new System.Windows.Forms.Label();
-            this.DescripcionLabel = new System.Windows.Forms.Label();
-            this.UrlLabel = new System.Windows.Forms.Label();
-            this.PrecioLabel = new System.Windows.Forms.Label();
-            this.MarcaLabel = new System.Windows.Forms.Label();
-            this.CategoriaLabel = new System.Windows.Forms.Label();
-            this.MostrarCodigo = new System.Windows.Forms.Label();
-            this.MostrarNombre = new System.Windows.Forms.Label();
-            this.MostrarDescripcion = new System.Windows.Forms.Label();
-            this.MostrarUrl = new System.Windows.Forms.Label();
-            this.MostrarMarca = new System.Windows.Forms.Label();
-            this.MostrarCategoria = new System.Windows.Forms.Label();
-            this.MostrarPrecio = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetalle));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ImagenBox = new System.Windows.Forms.PictureBox();
+            this.UtnBox = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BoxCategoria = new System.Windows.Forms.ComboBox();
+            this.BoxMarca = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtImagen = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.CargarImg = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.CargarImg)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UtnBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // CodigoLabel
+            // groupBox1
             // 
-            this.CodigoLabel.AutoSize = true;
-            this.CodigoLabel.Location = new System.Drawing.Point(27, 27);
-            this.CodigoLabel.Name = "CodigoLabel";
-            this.CodigoLabel.Size = new System.Drawing.Size(107, 15);
-            this.CodigoLabel.TabIndex = 6;
-            this.CodigoLabel.Text = "Codigo de Articulo";
+            this.groupBox1.Controls.Add(this.ImagenBox);
+            this.groupBox1.Controls.Add(this.UtnBox);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.BoxCategoria);
+            this.groupBox1.Controls.Add(this.BoxMarca);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.txtImagen);
+            this.groupBox1.Controls.Add(this.txtDescripcion);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.txtCodigo);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(478, 391);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
-            // NombreLabel
+            // ImagenBox
             // 
-            this.NombreLabel.AutoSize = true;
-            this.NombreLabel.Location = new System.Drawing.Point(27, 71);
-            this.NombreLabel.Name = "NombreLabel";
-            this.NombreLabel.Size = new System.Drawing.Size(51, 15);
-            this.NombreLabel.TabIndex = 7;
-            this.NombreLabel.Text = "Nombre";
+            this.ImagenBox.Location = new System.Drawing.Point(254, 72);
+            this.ImagenBox.Name = "ImagenBox";
+            this.ImagenBox.Size = new System.Drawing.Size(184, 124);
+            this.ImagenBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImagenBox.TabIndex = 70;
+            this.ImagenBox.TabStop = false;
             // 
-            // DescripcionLabel
+            // UtnBox
             // 
-            this.DescripcionLabel.AutoSize = true;
-            this.DescripcionLabel.Location = new System.Drawing.Point(27, 111);
-            this.DescripcionLabel.Name = "DescripcionLabel";
-            this.DescripcionLabel.Size = new System.Drawing.Size(69, 15);
-            this.DescripcionLabel.TabIndex = 8;
-            this.DescripcionLabel.Text = "Descripcion";
+            this.UtnBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(48)))), ((int)(((byte)(109)))));
+            this.UtnBox.Image = ((System.Drawing.Image)(resources.GetObject("UtnBox.Image")));
+            this.UtnBox.Location = new System.Drawing.Point(424, 17);
+            this.UtnBox.Name = "UtnBox";
+            this.UtnBox.Size = new System.Drawing.Size(48, 45);
+            this.UtnBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UtnBox.TabIndex = 69;
+            this.UtnBox.TabStop = false;
             // 
-            // UrlLabel
+            // label8
             // 
-            this.UrlLabel.AutoSize = true;
-            this.UrlLabel.Location = new System.Drawing.Point(451, 321);
-            this.UrlLabel.Name = "UrlLabel";
-            this.UrlLabel.Size = new System.Drawing.Size(97, 15);
-            this.UrlLabel.TabIndex = 9;
-            this.UrlLabel.Text = "Url De La Imagen";
+            this.label8.AutoSize = true;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Snow;
+            this.label8.Location = new System.Drawing.Point(161, 17);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(199, 31);
+            this.label8.TabIndex = 67;
+            this.label8.Text = "Detalle articulo";
             // 
-            // PrecioLabel
+            // BoxCategoria
             // 
-            this.PrecioLabel.AutoSize = true;
-            this.PrecioLabel.Location = new System.Drawing.Point(27, 257);
-            this.PrecioLabel.Name = "PrecioLabel";
-            this.PrecioLabel.Size = new System.Drawing.Size(40, 15);
-            this.PrecioLabel.TabIndex = 10;
-            this.PrecioLabel.Text = "Precio";
+            this.BoxCategoria.BackColor = System.Drawing.Color.White;
+            this.BoxCategoria.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BoxCategoria.FormattingEnabled = true;
+            this.BoxCategoria.Location = new System.Drawing.Point(37, 247);
+            this.BoxCategoria.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BoxCategoria.Name = "BoxCategoria";
+            this.BoxCategoria.Size = new System.Drawing.Size(137, 23);
+            this.BoxCategoria.TabIndex = 66;
             // 
-            // MarcaLabel
+            // BoxMarca
             // 
-            this.MarcaLabel.AutoSize = true;
-            this.MarcaLabel.Location = new System.Drawing.Point(27, 158);
-            this.MarcaLabel.Name = "MarcaLabel";
-            this.MarcaLabel.Size = new System.Drawing.Size(40, 15);
-            this.MarcaLabel.TabIndex = 10;
-            this.MarcaLabel.Text = "Marca";
+            this.BoxMarca.BackColor = System.Drawing.Color.White;
+            this.BoxMarca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BoxMarca.FormattingEnabled = true;
+            this.BoxMarca.Location = new System.Drawing.Point(37, 203);
+            this.BoxMarca.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BoxMarca.Name = "BoxMarca";
+            this.BoxMarca.Size = new System.Drawing.Size(137, 23);
+            this.BoxMarca.TabIndex = 65;
             // 
-            // CategoriaLabel
+            // label7
             // 
-            this.CategoriaLabel.AutoSize = true;
-            this.CategoriaLabel.Location = new System.Drawing.Point(27, 209);
-            this.CategoriaLabel.Name = "CategoriaLabel";
-            this.CategoriaLabel.Size = new System.Drawing.Size(58, 15);
-            this.CategoriaLabel.TabIndex = 11;
-            this.CategoriaLabel.Text = "Categoria";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(37, 230);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 15);
+            this.label7.TabIndex = 64;
+            this.label7.Text = "Categoria";
             // 
-            // MostrarCodigo
+            // label6
             // 
-            this.MostrarCodigo.AutoSize = true;
-            this.MostrarCodigo.Location = new System.Drawing.Point(268, 27);
-            this.MostrarCodigo.Name = "MostrarCodigo";
-            this.MostrarCodigo.Size = new System.Drawing.Size(13, 15);
-            this.MostrarCodigo.TabIndex = 12;
-            this.MostrarCodigo.Text = "..";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(37, 186);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.TabIndex = 63;
+            this.label6.Text = "Marca";
             // 
-            // MostrarNombre
+            // label5
             // 
-            this.MostrarNombre.AutoSize = true;
-            this.MostrarNombre.Location = new System.Drawing.Point(268, 71);
-            this.MostrarNombre.Name = "MostrarNombre";
-            this.MostrarNombre.Size = new System.Drawing.Size(13, 15);
-            this.MostrarNombre.TabIndex = 13;
-            this.MostrarNombre.Text = "..";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(37, 140);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 15);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Precio Del Articulo";
             // 
-            // MostrarDescripcion
+            // label4
             // 
-            this.MostrarDescripcion.AutoSize = true;
-            this.MostrarDescripcion.Location = new System.Drawing.Point(268, 111);
-            this.MostrarDescripcion.Name = "MostrarDescripcion";
-            this.MostrarDescripcion.Size = new System.Drawing.Size(13, 15);
-            this.MostrarDescripcion.TabIndex = 14;
-            this.MostrarDescripcion.Text = "..";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(39, 277);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 15);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "URL de la Imagen";
             // 
-            // MostrarUrl
+            // label3
             // 
-            this.MostrarUrl.AutoSize = true;
-            this.MostrarUrl.Location = new System.Drawing.Point(554, 321);
-            this.MostrarUrl.Name = "MostrarUrl";
-            this.MostrarUrl.Size = new System.Drawing.Size(13, 15);
-            this.MostrarUrl.TabIndex = 15;
-            this.MostrarUrl.Text = "..";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(37, 322);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 15);
+            this.label3.TabIndex = 60;
+            this.label3.Text = "Descripcion Del Articulo";
             // 
-            // MostrarMarca
+            // label2
             // 
-            this.MostrarMarca.AutoSize = true;
-            this.MostrarMarca.Location = new System.Drawing.Point(268, 158);
-            this.MostrarMarca.Name = "MostrarMarca";
-            this.MostrarMarca.Size = new System.Drawing.Size(13, 15);
-            this.MostrarMarca.TabIndex = 16;
-            this.MostrarMarca.Text = "..";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(37, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 15);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Nombre de Articulo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // MostrarCategoria
+            // label1
             // 
-            this.MostrarCategoria.AutoSize = true;
-            this.MostrarCategoria.Location = new System.Drawing.Point(268, 209);
-            this.MostrarCategoria.Name = "MostrarCategoria";
-            this.MostrarCategoria.Size = new System.Drawing.Size(13, 15);
-            this.MostrarCategoria.TabIndex = 17;
-            this.MostrarCategoria.Text = "..";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(37, 55);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Codigo de Articulo";
             // 
-            // MostrarPrecio
+            // txtPrecio
             // 
-            this.MostrarPrecio.AutoSize = true;
-            this.MostrarPrecio.Location = new System.Drawing.Point(268, 257);
-            this.MostrarPrecio.Name = "MostrarPrecio";
-            this.MostrarPrecio.Size = new System.Drawing.Size(13, 15);
-            this.MostrarPrecio.TabIndex = 18;
-            this.MostrarPrecio.Text = "..";
+            this.txtPrecio.BackColor = System.Drawing.Color.White;
+            this.txtPrecio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPrecio.Location = new System.Drawing.Point(39, 157);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(210, 23);
+            this.txtPrecio.TabIndex = 57;
+            // 
+            // txtImagen
+            // 
+            this.txtImagen.BackColor = System.Drawing.Color.White;
+            this.txtImagen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtImagen.Location = new System.Drawing.Point(39, 294);
+            this.txtImagen.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtImagen.Name = "txtImagen";
+            this.txtImagen.Size = new System.Drawing.Size(400, 23);
+            this.txtImagen.TabIndex = 56;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.White;
+            this.txtDescripcion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtDescripcion.Location = new System.Drawing.Point(37, 339);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(398, 23);
+            this.txtDescripcion.TabIndex = 55;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.White;
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtNombre.Location = new System.Drawing.Point(37, 114);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(210, 23);
+            this.txtNombre.TabIndex = 54;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.BackColor = System.Drawing.Color.White;
+            this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodigo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCodigo.Location = new System.Drawing.Point(37, 72);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(210, 23);
+            this.txtCodigo.TabIndex = 53;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(127, 295);
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(48)))), ((int)(((byte)(109)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSalir.Location = new System.Drawing.Point(13, 409);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 32;
+            this.btnSalir.Size = new System.Drawing.Size(479, 38);
+            this.btnSalir.TabIndex = 68;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // CargarImg
-            // 
-            this.CargarImg.Location = new System.Drawing.Point(451, 27);
-            this.CargarImg.Name = "CargarImg";
-            this.CargarImg.Size = new System.Drawing.Size(335, 291);
-            this.CargarImg.TabIndex = 33;
-            this.CargarImg.TabStop = false;
             // 
             // FormDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 450);
-            this.Controls.Add(this.CargarImg);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(48)))), ((int)(((byte)(109)))));
+            this.ClientSize = new System.Drawing.Size(503, 462);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.MostrarPrecio);
-            this.Controls.Add(this.MostrarCategoria);
-            this.Controls.Add(this.MostrarMarca);
-            this.Controls.Add(this.MostrarUrl);
-            this.Controls.Add(this.MostrarDescripcion);
-            this.Controls.Add(this.MostrarNombre);
-            this.Controls.Add(this.MostrarCodigo);
-            this.Controls.Add(this.CategoriaLabel);
-            this.Controls.Add(this.MarcaLabel);
-            this.Controls.Add(this.PrecioLabel);
-            this.Controls.Add(this.UrlLabel);
-            this.Controls.Add(this.DescripcionLabel);
-            this.Controls.Add(this.NombreLabel);
-            this.Controls.Add(this.CodigoLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormDetalle";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Detalle";
             this.Load += new System.EventHandler(this.FormDetalle_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CargarImg)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UtnBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label CodigoLabel;
-        private System.Windows.Forms.Label NombreLabel;
-        private System.Windows.Forms.Label DescripcionLabel;
-        private System.Windows.Forms.Label UrlLabel;
-        private System.Windows.Forms.Label PrecioLabel;
-        private System.Windows.Forms.Label MarcaLabel;
-        private System.Windows.Forms.Label CategoriaLabel;
-        private System.Windows.Forms.Label MostrarCodigo;
-        private System.Windows.Forms.Label MostrarNombre;
-        private System.Windows.Forms.Label MostrarDescripcion;
-        private System.Windows.Forms.Label MostrarUrl;
-        private System.Windows.Forms.Label MostrarMarca;
-        private System.Windows.Forms.Label MostrarCategoria;
-        private System.Windows.Forms.Label MostrarPrecio;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox UtnBox;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.PictureBox CargarImg;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox BoxCategoria;
+        private System.Windows.Forms.ComboBox BoxMarca;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtImagen;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.PictureBox ImagenBox;
     }
 }

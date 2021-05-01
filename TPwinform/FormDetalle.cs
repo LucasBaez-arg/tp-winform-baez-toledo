@@ -26,23 +26,23 @@ namespace Presentacion
 
             try
             {
+                groupBox1.Enabled = false;
+                txtCodigo.Text = this.art.CodigoArticulo;
+                txtNombre.Text = this.art.Nombre;
+                txtDescripcion.Text = this.art.Descripcion;
+                txtImagen.Text = this.art.Imagen;
+                txtPrecio.Text = this.art.Precio.ToString();
+                BoxCategoria.Text = this.art.Categoria.Descripcion;
+                BoxMarca.Text = this.art.Marca.Descripcion;
 
-                MostrarCodigo.Text = this.art.CodigoArticulo;
-                MostrarNombre.Text = this.art.Nombre;
-                MostrarDescripcion.Text = this.art.Descripcion;
-                MostrarUrl.Text = this.art.Imagen;
-                MostrarPrecio.Text = this.art.Precio.ToString();
-                MostrarCategoria.Text = this.art.Categoria.Descripcion;
-                MostrarMarca.Text = this.art.Marca.Descripcion;
-
-                CargarImg.Load(this.art.Imagen);
+                ImagenBox.Load(this.art.Imagen);
                 
 
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.ToString());
-                CargarImg.Load("https://definicion.de/wp-content/uploads/2009/02/error.jpg");
+                ImagenBox.Load("https://definicion.de/wp-content/uploads/2009/02/error.jpg");
             }
 
         }
@@ -50,6 +50,26 @@ namespace Presentacion
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
