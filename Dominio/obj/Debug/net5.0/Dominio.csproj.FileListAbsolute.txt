@@ -21,3 +21,4 @@ C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.csp
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.pdb
+C:\Users\Maty\Documents\GitHub\Programacion\Dominio\obj\Debug\net5.0\Dominio.csprojAssemblyReference.cache

@@ -63,3 +63,4 @@ D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\ne
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.pdb
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
 D:\Carpetas 2AñoFacultad\Repositorio Github\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
+C:\Users\Maty\Documents\GitHub\Programacion\TPwinform\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
