@@ -8,11 +8,11 @@ namespace Dominio
 {
     public class Marca
     {
-        //Atributos
-       private int id;
-       private string descripcion;
+       
+        private int id;
+        private string descripcion;
 
-       public Marca(string descripcion)
+        public Marca(string descripcion)
         {
             this.descripcion = descripcion;
         }

@@ -49,7 +49,6 @@ namespace Negocio
             }
         }
 
-
         public void Agregar(Articulo art)
         {
             AccesoDatos db = new AccesoDatos();
@@ -146,7 +145,6 @@ namespace Negocio
             
             return Verif;
         }
-
 
         public List<Articulo> Listar()
         {

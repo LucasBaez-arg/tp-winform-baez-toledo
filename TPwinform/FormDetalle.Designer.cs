@@ -79,7 +79,6 @@ namespace Presentacion
             this.groupBox1.Size = new System.Drawing.Size(478, 391);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
             // ImagenBox
             // 
@@ -207,7 +206,6 @@ namespace Presentacion
             this.label2.Size = new System.Drawing.Size(112, 15);
             this.label2.TabIndex = 59;
             this.label2.Text = "Nombre de Articulo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -271,7 +269,6 @@ namespace Presentacion
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(210, 23);
             this.txtCodigo.TabIndex = 53;
-            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // btnSalir
             // 

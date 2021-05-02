@@ -15,6 +15,7 @@ namespace Presentacion
     public partial class FormDetalle : Form
     {
         private Articulo art;
+
         public FormDetalle(Articulo art)
         {
             InitializeComponent();
@@ -35,14 +36,12 @@ namespace Presentacion
                 BoxCategoria.Text = this.art.Categoria.Descripcion;
                 BoxMarca.Text = this.art.Marca.Descripcion;
 
-                ImagenBox.Load(this.art.Imagen);
-                
+                ImagenBox.Load(this.art.Imagen);  
 
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.ToString());
-                ImagenBox.Load("https://definicion.de/wp-content/uploads/2009/02/error.jpg");
+                ImagenBox.Load("http://anokha.world/images/not-found.png");
             }
 
         }
@@ -52,25 +51,6 @@ namespace Presentacion
             Close();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

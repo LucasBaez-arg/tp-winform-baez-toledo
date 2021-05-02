@@ -45,7 +45,6 @@ namespace Negocio
             comando.ExecuteNonQuery();
         }
 
-
         public void CerraConexion()
         {
             if(leer != null)
@@ -56,8 +55,6 @@ namespace Negocio
 
             conexion.Close();
         }
-
-        
 
     }
 }

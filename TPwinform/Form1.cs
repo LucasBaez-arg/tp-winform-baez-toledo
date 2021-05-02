@@ -47,18 +47,7 @@ namespace Presentacion
             {
                 MessageBox.Show(err.ToString());
             }
-        }
-
-       
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }      
 
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -89,7 +78,7 @@ namespace Presentacion
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("Desea eliminar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Desea eliminar el articulo", "Eliminar articulo", MessageBoxButtons.YesNo);
 
             try
             {
@@ -151,8 +140,7 @@ namespace Presentacion
                 {
                     cargarGrilla();
                 }
-              
-               
+
             }
             catch (Exception err)
             {

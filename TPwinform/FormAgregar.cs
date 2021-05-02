@@ -20,11 +20,6 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public bool verificarText(List<TextBox> listBox)
         {
             bool verificado = true;
@@ -60,16 +55,12 @@ namespace Presentacion
                 MessageBox.Show(err.ToString());
             }
         }
-
-        
+  
         private void bttAgregar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio artNegocio = new ArticuloNegocio();
             Articulo art = new Articulo();
             List<TextBox> listBox = new List<TextBox>();
-
-            txtCodigo.Text = txtCodigo.Text.Replace(" ", String.Empty);
-
 
             listBox.Add(txtCodigo);
             listBox.Add(txtNombre);
@@ -77,15 +68,14 @@ namespace Presentacion
             listBox.Add(txtPrecio);
             listBox.Add(txtImagen);
 
-
-
-
             DialogResult result = MessageBox.Show("Desea agregar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
 
             try
             {  
                 if (verificarText(listBox) && result == DialogResult.Yes )
                 {
+                    txtCodigo.Text = txtCodigo.Text.Replace(" ", String.Empty);
+
                     if (artNegocio.VerificarCodigo(txtCodigo.Text))
                     {
                         art.CodigoArticulo = txtCodigo.Text;
@@ -125,19 +115,9 @@ namespace Presentacion
 
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
-          
             if ((e.KeyChar < 48 || e.KeyChar > 59) && e.KeyChar != 8)
                 e.Handled = true;
         }
 
-        private void bttCancelar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
     }
 }

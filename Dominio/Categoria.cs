@@ -8,7 +8,7 @@ namespace Dominio
 {
     public class Categoria
     {
-        //Atributos
+        
         private string descripcion;
         private int id;
 
@@ -16,6 +16,7 @@ namespace Dominio
         {
             this.descripcion = descripcion;
         }
+      
         public Categoria(int id, string descripcion)
         {
             this.descripcion = descripcion;

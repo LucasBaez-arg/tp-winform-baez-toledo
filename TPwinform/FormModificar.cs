@@ -94,7 +94,7 @@ namespace Presentacion
             listBox.Add(txtPrecio);
             listBox.Add(txtImagen);
 
-            DialogResult result = MessageBox.Show("Desea modificar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Desea modificar el articulo", "Modificar articulo", MessageBoxButtons.YesNo);
            
             try
             {
