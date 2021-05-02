@@ -206,6 +206,7 @@ namespace Presentacion
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(210, 23);
             this.txtPrecio.TabIndex = 40;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtImagen
             // 
@@ -247,6 +248,7 @@ namespace Presentacion
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(210, 23);
             this.txtCodigo.TabIndex = 36;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // FormAgregar
             // 

@@ -68,6 +68,9 @@ namespace Presentacion
             Articulo art = new Articulo();
             List<TextBox> listBox = new List<TextBox>();
 
+            txtCodigo.Text = txtCodigo.Text.Replace(" ", String.Empty);
+
+
             listBox.Add(txtCodigo);
             listBox.Add(txtNombre);
             listBox.Add(txtDescripcion);
@@ -75,25 +78,40 @@ namespace Presentacion
             listBox.Add(txtImagen);
 
 
-            try
-            {
-                if (verificarText(listBox))
-                {
-                    art.CodigoArticulo = txtCodigo.Text;
-                    art.Nombre = txtNombre.Text;
-                    art.Descripcion = txtDescripcion.Text;
-                    art.Imagen = txtImagen.Text;
-                    art.Precio = decimal.Parse(txtPrecio.Text);
-                    art.Categoria = (Categoria)BoxCategoria.SelectedItem;
-                    art.Marca = (Marca)BoxMarca.SelectedItem;
 
-                    artNegocio.Agregar(art);
-                    MessageBox.Show("Se agrego articulo");
-                    Close();
-                }
-                else
+
+            DialogResult result = MessageBox.Show("Desea agregar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
+
+            try
+            {  
+                if (verificarText(listBox) && result == DialogResult.Yes )
                 {
-                    MessageBox.Show("Error: Faltan datos en el formulario");
+                    if (artNegocio.VerificarCodigo(txtCodigo.Text))
+                    {
+                        art.CodigoArticulo = txtCodigo.Text;
+                        art.Nombre = txtNombre.Text;
+                        art.Descripcion = txtDescripcion.Text;
+                        art.Imagen = txtImagen.Text;
+                        art.Precio = decimal.Parse(txtPrecio.Text);
+                        art.Categoria = (Categoria)BoxCategoria.SelectedItem;
+                        art.Marca = (Marca)BoxMarca.SelectedItem;
+
+                        artNegocio.Agregar(art);
+                        MessageBox.Show("Se agrego articulo");
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error:El codigo articulo ya existe!");
+                    }      
+                }
+                else 
+                {
+                    if (result == DialogResult.Yes) 
+                    { 
+                        MessageBox.Show("Error: Faltan datos en el formulario"); 
+                    }
+                    
                 }
                 
             }
@@ -107,6 +125,7 @@ namespace Presentacion
 
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
+          
             if ((e.KeyChar < 48 || e.KeyChar > 59) && e.KeyChar != 8)
                 e.Handled = true;
         }
@@ -114,6 +133,11 @@ namespace Presentacion
         private void bttCancelar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
         }
     }
 }

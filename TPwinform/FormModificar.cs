@@ -94,25 +94,39 @@ namespace Presentacion
             listBox.Add(txtPrecio);
             listBox.Add(txtImagen);
 
+            DialogResult result = MessageBox.Show("Desea modificar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
+           
             try
             {
-                if (verificarText(listBox))
+                if (verificarText(listBox) && result == DialogResult.Yes)
                 {
-                    art.CodigoArticulo = txtCodigo.Text;
-                    art.Nombre = txtNombre.Text;
-                    art.Descripcion = txtDescripcion.Text;
-                    art.Imagen = txtImagen.Text;
-                    art.Precio = decimal.Parse(txtPrecio.Text);
-                    art.Categoria = (Categoria)BoxCategoria.SelectedItem;
-                    art.Marca = (Marca)BoxMarca.SelectedItem;
+                    if (art.CodigoArticulo == txtCodigo.Text || artNegocio.VerificarCodigo(txtCodigo.Text))
+                    {
+                        art.CodigoArticulo = txtCodigo.Text;
+                        art.Nombre = txtNombre.Text;
+                        art.Descripcion = txtDescripcion.Text;
+                        art.Imagen = txtImagen.Text;
+                        art.Precio = decimal.Parse(txtPrecio.Text);
+                        art.Categoria = (Categoria)BoxCategoria.SelectedItem;
+                        art.Marca = (Marca)BoxMarca.SelectedItem;
 
-                    artNegocio.Modificar(art);
-                    MessageBox.Show("Se modifico articulo");
-                    Close();
+                        
+
+                        artNegocio.Modificar(art);
+                        MessageBox.Show("Se modifico articulo");
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error:El codigo articulo ya existe!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error: Faltan datos en el formulario");
+                    if (result == DialogResult.Yes)
+                    {
+                        MessageBox.Show("Error: Faltan datos en el formulario");
+                    }
                 }
             }
             catch (Exception err)

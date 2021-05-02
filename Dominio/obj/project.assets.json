@@ -454,28 +454,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maty\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\baez-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maty\\Documents\\GitHub\\Programacion\\Dominio\\obj\\",
+      "projectPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\baez-\\.nuget\\packages\\",
+      "outputPath": "D:\\Carpetas 2AñoFacultad\\Repositorio Github\\Programacion\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\baez-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

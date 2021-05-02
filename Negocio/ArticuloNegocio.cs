@@ -11,14 +11,13 @@ namespace Negocio
     public class ArticuloNegocio
     {
 
-
         public List<Articulo> Filtrar(string txtFiltrar)
         {
             AccesoDatos datos = new AccesoDatos();
             List<Articulo> articulos = new List<Articulo>();
 
             string inner = "SELECT A.Codigo,A.Nombre,A.Descripcion,A.Precio,C.Descripcion AS Categoria,M.Descripcion AS Marca from ARTICULOS AS A  INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id WHERE ";
-            string filter = "A.Codigo LIKE '%" + txtFiltrar + "%'OR A.Nombre LIKE '%" + txtFiltrar + "%' OR A.Descripcion LIKE '%" + txtFiltrar + "%' OR A.Precio LIKE '%" + txtFiltrar + "%' OR C.Descripcion LIKE '%" + txtFiltrar + "%'OR M.Descripcion LIKE '%" + txtFiltrar + "%'";
+            string filter = "A.Codigo LIKE '%" + txtFiltrar + "%'OR A.Nombre LIKE '%" + txtFiltrar  + "%' OR A.Precio LIKE '%" + txtFiltrar  + "%'";
             try
             {
                 datos.SetearConsulta(inner + filter);
@@ -30,7 +29,7 @@ namespace Negocio
 
                     art.Nombre = (string)datos.Leer["Nombre"];
                     art.Marca = new Marca((string)datos.Leer["Marca"]);
-                    art.Precio = (decimal)datos.Leer["Precio"];
+                    art.Precio = decimal.Round((decimal)datos.Leer["Precio"], 2);
                     art.Categoria = new Categoria((string)datos.Leer["Categoria"]);
                     art.Descripcion = (string)datos.Leer["Descripcion"];
                     art.CodigoArticulo = (string)datos.Leer["Codigo"];
@@ -111,6 +110,44 @@ namespace Negocio
             }
         }
 
+        public bool VerificarCodigo(string Codigo)
+        {
+            int VerifCantidad = 0;
+            bool Verif = true;
+            AccesoDatos datos = new AccesoDatos();
+            
+
+            try
+            {
+                datos.SetearConsulta("SELECT count (Codigo) as Codigo from ARTICULOS WHERE Codigo = '" +Codigo+"'");
+                datos.EjecutarLectura();
+
+                if (datos.Leer.Read())
+                {
+                   VerifCantidad = (Int32)datos.Leer[0];
+
+                    if(VerifCantidad > 0)
+                    {
+                        Verif = false;
+                    }
+
+                }
+ 
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+            finally
+            {
+                datos.CerraConexion();
+            }
+
+            
+            return Verif;
+        }
+
+
         public List<Articulo> Listar()
         {
 
@@ -131,12 +168,14 @@ namespace Negocio
                     art.Id = (int)datos.Leer["Id"];
                     art.Nombre = (string)datos.Leer["Nombre"];
                     art.Marca = new Marca((string)datos.Leer["Marca"]);
-                    art.Precio = (decimal)datos.Leer["Precio"];
+                    art.Precio = decimal.Round((decimal)datos.Leer["Precio"],2);
                     art.Imagen = (string)datos.Leer["ImagenUrl"];
                     art.Categoria = new Categoria((string)datos.Leer["Categoria"]);
                     art.Descripcion = (string)datos.Leer["Descripcion"];
                     art.CodigoArticulo = (string)datos.Leer["Codigo"];
-                    
+
+                   
+
                     articulos.Add(art);
                 }
                 return articulos;

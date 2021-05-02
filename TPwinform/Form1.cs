@@ -68,13 +68,13 @@ namespace Presentacion
         private void RecargarImg(string img)
         {
             try
-            {
+            {   
                 pictureBox1.Load(img);
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.ToString());
-                pictureBox1.Load("https://definicion.de/wp-content/uploads/2009/02/error.jpg");
+                pictureBox1.Load("http://anokha.world/images/not-found.png");
+                
             }
 
         }
@@ -88,17 +88,26 @@ namespace Presentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+
+            DialogResult result = MessageBox.Show("Desea eliminar el articulo", "Agregar articulo", MessageBoxButtons.YesNo);
+
             try
             {
-                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-                Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
-                articuloNegocio.Eliminar(seleccionado.Id);
-                MessageBox.Show("Articulo Eliminado");
-                cargarGrilla();
+                if (result == DialogResult.Yes)
+                {
+                    ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+                    Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+                    articuloNegocio.Eliminar(seleccionado.Id);
+                    MessageBox.Show("Articulo Eliminado");
+                    cargarGrilla();
+                }
             }
             catch(Exception err)
             {
-                MessageBox.Show(err.ToString());
+                if (result == DialogResult.Yes)
+                {
+                    MessageBox.Show(err.ToString());
+                }
             }
         }
 

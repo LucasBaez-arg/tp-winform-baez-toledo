@@ -135,7 +135,7 @@ namespace Presentacion
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBuscar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBuscar.Location = new System.Drawing.Point(0, 182);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.PlaceholderText = "Filtrar";
@@ -147,6 +147,8 @@ namespace Presentacion
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(48)))), ((int)(((byte)(109)))));
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(400, 97);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(252, 257);
